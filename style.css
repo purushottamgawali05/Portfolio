@@ -8,43 +8,65 @@
 body {
   font-family: "Segoe UI", sans-serif;
   background-color: #f4f7fa;
-  color: #1c1e21;
+  color: #e5e5e5;
   padding-top: 100px;
   line-height: 1.6;
 }
 
+/* ---------- Unified Dark Mode ---------- */
 body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #0f0f10; /* Unified background */
+  color: #e5e5e5;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Header */
 body.dark-mode header {
-  background-color: #1e1e1e;
-}
-
-body.dark-mode .nav-logo,
-body.dark-mode nav a,
-body.dark-mode .theme-toggle-btn {
-  color: #e0e0e0;
-}
-
-body.dark-mode .experience-card,
-body.dark-mode .education-card,
-body.dark-mode .project-card,
-body.dark-mode .skill-card,
-body.dark-mode .contact-card {
-  background-color: #1e1e1e;
-  color: #ddd;
+  background-color: #18181b;
   box-shadow: 0 2px 12px rgba(255, 255, 255, 0.05);
 }
 
-body.dark-mode .btn.primary {
-  background-color: #bb86fc;
+/* Navbar & Buttons */
+body.dark-mode .nav-logo,
+body.dark-mode nav a,
+body.dark-mode .theme-toggle-btn {
+  color: #f0f0f0;
 }
 
+/* Cards (consistent contrast against page bg) */
+body.dark-mode .skill-card,
+body.dark-mode .experience-card,
+body.dark-mode .education-card,
+body.dark-mode .project-card,
+body.dark-mode .contact-card {
+  background-color: #1b1b20; /* Slightly lighter than body for separation */
+  color: #f0f0f0;
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Buttons */
+body.dark-mode .btn.primary {
+  background-color: #bb86fc;
+  color: #000;
+  box-shadow: 0 4px 16px rgba(187, 134, 252, 0.4);
+}
+
+body.dark-mode .btn.secondary {
+  color: #bb86fc;
+  border-color: #bb86fc;
+}
+
+body.dark-mode .btn.secondary:hover {
+  background-color: #bb86fc;
+  color: #000;
+}
+
+/* Footer */
 body.dark-mode footer {
-  background-color: #1e1e1e;
-  color: #aaa;
+  background-color: #18181b;
+  color: #f0f0f0;
+  box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.05);
 }
 
 h2 {
@@ -55,7 +77,7 @@ h2 {
 
 p {
   font-size: 1.05rem;
-  color: #444;
+  color: #f7ecec;
 }
 
 header {
@@ -66,7 +88,7 @@ header {
   background-color: #f4f7fa;
   padding: 20px 80px;
   z-index: 999;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .nav-container {
@@ -173,14 +195,12 @@ nav a:hover {
 
 .hero-section h2 {
   font-size: 1.3rem;
-  color: #555;
   margin-bottom: 20px;
 }
 
 .intro {
   max-width: 600px;
   margin: 0 auto 30px;
-  color: #555;
   font-size: 1.1rem;
   line-height: 1.6;
 }
@@ -226,7 +246,6 @@ nav a:hover {
 .about-section {
   text-align: center;
   padding: 60px 20px;
-  background-color: #fff;
 }
 
 .about-section h2 {
@@ -236,7 +255,6 @@ nav a:hover {
 }
 
 .subtitle {
-  color: #666;
   font-size: 1.1rem;
   margin-bottom: 30px;
 }
@@ -247,11 +265,9 @@ nav a:hover {
   text-align: left;
   font-size: 1.05rem;
   line-height: 1.8;
-  color: #333;
 }
 /* Skills Section */
 .skills-section {
-  background-color: #f9fbfd;
   padding: 60px 20px;
   text-align: center;
 }
@@ -263,7 +279,6 @@ nav a:hover {
 }
 
 .skills-section .subtitle {
-  color: #666;
   font-size: 1.1rem;
   margin-bottom: 40px;
 }
@@ -280,11 +295,13 @@ nav a:hover {
   background-color: #fff;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  /* Stronger depth + crisp outline */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
@@ -305,11 +322,15 @@ nav a:hover {
 }
 /* Experience Section */
 .experience-section {
-  background-color: #f9fbfd;
   padding: 60px 20px;
   text-align: center;
 }
 
+.experience-section a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
 .experience-section h2 {
   font-size: 2rem;
   font-weight: bold;
@@ -317,7 +338,6 @@ nav a:hover {
 }
 
 .experience-section .subtitle {
-  color: #666;
   font-size: 1.1rem;
   margin-bottom: 30px;
 }
@@ -328,7 +348,8 @@ nav a:hover {
   background-color: #fff;
   padding: 25px;
   border-radius: 14px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   text-align: left;
 }
 
@@ -346,7 +367,8 @@ nav a:hover {
   background-color: #fff;
   padding: 25px;
   border-radius: 14px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   text-align: left;
 }
 
@@ -357,14 +379,12 @@ nav a:hover {
 }
 
 .date {
-  color: #555;
   font-size: 0.95rem;
 }
 
 .experience-points {
   list-style-type: disc;
   padding-left: 20px;
-  color: #333;
   margin-bottom: 15px;
   line-height: 1.6;
 }
@@ -381,7 +401,6 @@ nav a:hover {
 
 /* Education Section */
 .education-section {
-  background-color: #fff;
   padding: 60px 20px;
   text-align: center;
 }
@@ -393,7 +412,6 @@ nav a:hover {
 }
 
 .education-section .subtitle {
-  color: #666;
   font-size: 1.1rem;
   margin-bottom: 30px;
 }
@@ -404,7 +422,8 @@ nav a:hover {
   background-color: #fefefe;
   padding: 25px;
   border-radius: 14px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -427,7 +446,7 @@ nav a:hover {
 }
 
 .edu-left a {
-  color: #1a53ff;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
   display: block;
@@ -436,17 +455,21 @@ nav a:hover {
 
 .edu-left p {
   margin: 4px 0;
-  color: #444;
+  color: #f7ecec;
 }
 
 .edu-right {
-  color: #555;
+  color: #f7ecec;
   font-size: 0.95rem;
   align-self: center;
 }
 /* Projects Section */
+.project-card-demo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .projects-section {
-  background-color: #f9fbfd;
   padding: 80px 20px;
   text-align: center;
 }
@@ -458,7 +481,6 @@ nav a:hover {
 }
 
 .projects-section .subtitle {
-  color: #666;
   font-size: 1.1rem;
   margin-bottom: 40px;
 }
@@ -475,7 +497,8 @@ nav a:hover {
   background-color: white;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
   text-align: left;
 }
@@ -500,7 +523,7 @@ nav a:hover {
 }
 
 .project-info p {
-  color: #555;
+  color: #f7ecec;
   margin-bottom: 15px;
   font-size: 1rem;
   line-height: 1.6;
@@ -532,7 +555,6 @@ nav a:hover {
   text-decoration: underline;
 }
 .coding-section {
-  background-color: #f4f7fa;
   padding: 60px 20px;
   text-align: center;
 }
@@ -545,7 +567,6 @@ nav a:hover {
 
 .coding-section .subtitle {
   font-size: 1.1rem;
-  color: #666;
   margin-bottom: 40px;
 }
 
@@ -563,14 +584,14 @@ nav a:hover {
 .platform h3 {
   font-size: 1.1rem;
   margin-bottom: 10px;
-  color: #333;
 }
 
 .platform img {
   width: 520px;
   max-width: 100%;
   border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
@@ -580,7 +601,6 @@ nav a:hover {
 
 /* Contact Section */
 .contact-section {
-  background-color: #fff;
   padding: 60px 20px;
   text-align: center;
 }
@@ -597,7 +617,8 @@ nav a:hover {
   background-color: #f9fbfd;
   padding: 20px 30px;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   gap: 15px;
@@ -615,7 +636,6 @@ nav a:hover {
 /* Footer */
 footer {
   background-color: #1c1e21;
-  color: #ccc;
   height: 150px;
   display: flex;
   justify-content: center;
@@ -625,13 +645,13 @@ footer {
   text-align: center;
 }
 
-footer a {
-  color: #ffffff;
-  text-decoration: underline;
+footer p {
+  color: #dedbdb;
+  /* text-decoration: underline; */
   font-weight: 500;
 }
 
-footer a:hover {
+footer p:hover {
   color: #007bff;
 }
 @media (max-width: 768px) {
@@ -703,4 +723,56 @@ footer a:hover {
     padding: 60px 16px;
     text-align: center;
   }
+}
+/* --- Custom Scrollbar (Beautiful & Smooth) --- */
+/* === Elegant Neon Scrollbar === */
+
+/* Base scrollbar style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scrollbar track — the "status bar" background */
+::-webkit-scrollbar-track {
+  background: radial-gradient(circle at 50% 50%, #d9e4ff 0%, #f4f7fa 80%);
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 123, 255, 0.2);
+}
+
+/* Scrollbar thumb — the draggable part */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #007bff, #00c6ff);
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* On hover: stronger neon glow */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00c6ff, #007bff);
+  box-shadow: 0 0 12px rgba(0, 162, 255, 0.8);
+}
+
+/* === Dark Mode Scrollbar === */
+body.dark-mode ::-webkit-scrollbar-track {
+  background: radial-gradient(circle at 50% 50%, #0d0d14 0%, #1a1a2e 80%);
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(187, 134, 252, 0.15);
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #bb86fc, #7a49c7);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(187, 134, 252, 0.5);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #cfa2ff, #8e5af2);
+  box-shadow: 0 0 16px rgba(187, 134, 252, 0.8);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }

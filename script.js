@@ -5,17 +5,7 @@ hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
-// Simple function to download PDF from your folder
-function downloadPDF(pdfPath, fileName) {
-  const link = document.createElement("a");
-  link.href = pdfPath;
-  link.download = fileName || "document.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
-
-// Alternative version with error handling:
+// PDF download with error handling
 function downloadPDFSafe(pdfPath, fileName) {
   try {
     const link = document.createElement("a");
@@ -32,21 +22,14 @@ function downloadPDFSafe(pdfPath, fileName) {
   }
 }
 
-// One-liner version:
-const downloadPDFQuick = (path, name) => {
-  const a = document.createElement("a");
-  a.href = path;
-  a.download = name;
-  a.click();
-};
+// Default: Dark Mode Permanently
+document.body.classList.add("dark-mode");
 
+// Hide or disable theme toggle button completely
 const themeToggle = document.getElementById("themeToggle");
-
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-
-  // Optional: toggle icon
-  themeToggle.textContent = document.body.classList.contains("dark-mode")
-    ? "☀️"
-    : "🌙";
-});
+if (themeToggle) {
+  themeToggle.style.display = "none"; // 👈 hides the toggle button
+  // OR, if you want to keep it visible but inactive:
+  // themeToggle.disabled = true;
+  // themeToggle.title = "Dark mode is permanently enabled";
+}
