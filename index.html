@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Purushottam Gawali is a Full Stack Developer focused on MERN stack, backend engineering, and scalable web applications." />
   <title>Purushottam Gawali | Full Stack Developer</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 
-<body>
+<body class="dark-mode">
   <header>
     <div class="nav-container">
       <div class="nav-logo">Purushottam Gawali</div>
@@ -20,390 +20,468 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#coding-stats">Coding-Stats</a></li>
+          <li><a href="#achievements">Achievements</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="hamburger" id="hamburger">
+      <div class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </div>
-
-      <button id="themeToggle" class="theme-toggle-btn" title="Toggle Dark Mode">
-        🌙
-      </button>
     </div>
   </header>
 
-  <section class="hero-section">
-    <img src="./assets/imageResume.jpeg" alt="Abhishek's photo" class="profile-img" />
-    <h1>Purushottam Gawali</h1>
-    <h2>Software Engineer | Full Stack Developer</h2>
-    <p class="intro">
-      Passionate about creating innovative solutions with modern technologies.
-      <br />
-      Specialized in Full-Stack development and scalable architectures.
-    </p>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=purushottamgawali2004@gmail.com" class="btn primary"
-      target="_blank" rel="noopener noreferrer">📩 Get In Touch</a>
-
-    <a href="#" class="btn secondary"
-      onclick="downloadPDFSafe('Purushottam_Internship_resume_Portfolio.pdf', 'Purushottam_Internship_resume_Portfolio.pdf')">
-      ⬇️ Download Resume
-    </a>
-    </div>
-  </section>
-
-  <section class="about-section" id="about">
-    <h2>About Me</h2>
-    <p class="subtitle">
-      A passionate Software Developer with a knack for building fast, scalable
-      apps
-    </p>
-    <div class="about-text">
-      <p>
-        I am a Computer Science and Engineering student at Deogiri Institute of Engineering and Management Studies,
-        passionate about building scalable, user-friendly web applications and solving real-world problems through
-        technology. I specialize in full-stack web development using the MERN stack, including MongoDB, Express.js,
-        React.js, and Node.js. My experience includes developing applications such as an AI-powered social media post
-        scheduler, an event booking platform, and an airline booking system, where I have worked on RESTful APIs, secure
-        authentication, role-based access control, and database management.
-      </p>
-      <br />
-      <p>
-        Beyond web development, I have a strong interest in Data Structures and Algorithms, backend engineering, and
-        software design. I have solved 300+ problems on LeetCode and GeeksforGeeks, earned a 5-star rating in Java on
-        HackerRank, and participated in four national hackathons. As an HDFC Bank Parivartan Scholar and an active NSS
-        volunteer, I value continuous learning, teamwork, and social responsibility. I am eager to apply my technical
-        skills, strengthen my software engineering expertise, and contribute to building reliable and impactful software
-        solutions.
-      </p>
-      <br />
-      <p>
-        Outside of work, I enjoy problem-solving (DSA), system design, and
-        exploring new tools and patterns for scalable architecture and better
-        user experiences.
-      </p>
-    </div>
-  </section>
-  <section class="skills-section" id="skills">
-    <h2>Skills & Technologies</h2>
-    <p class="subtitle">Tools, languages, and core CS concepts I work with</p>
-
-    <div class="skills-grid">
-      <div class="skill-card">
-        <img src="./assets/icons/c.png" alt="Kotlin" />
-        <span>C</span>
-      </div>
-      <div class="skill-card">
-        <img src="./assets/icons/Java.png" alt="Java" />
-        <span>Java</span>
-      </div>
-      <div class="skill-card">
-        <img src="./assets/icons/Javascript.png" alt="JavaScript" />
-        <span>JavaScript</span>
-      </div>
-      <div class="skill-card">
-        <img src="./assets/icons/HTML.png" alt="HTML" />
-        <span>HTML</span>
-      </div>
-      <div class="skill-card">
-        <img src="./assets/icons/reactjs.png" alt="ReactJs" />
-        <span>ReactJs</span>
-      </div>
-      <div class="skill-card">
-        <img src="./assets/icons/python.png" alt="NextJs" />
-        <span>Python</span>
-      </div>
-      <div class="skill-card">
-        <img src="./assets/icons/sql.png" alt="SQL" />
-        <span>SQL</span>
-      </div>
-      <div class="skill-card">
-        <img src="./assets/icons/mongodb.png" alt="MongoDB" />
-        <span>MongoDB</span>
-      </div>
-      <div class="skill-card">
-        <img src="./assets/icons/linux.png" alt="Redis" />
-        <span>Linux</span>
-      </div>
-      <div class="skill-card">
-        <img src="./assets/icons/aws.png" alt="Redis" />
-        <span>AWS</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Work Experience Section -->
-  <!-- <section class="experience-section" id="experience">
-    <h2>Work Experience</h2>
-    <p class="subtitle">
-      My professional journey and key contributions in various roles
-    </p>
-
-    <div class="experience-card">
-      <div class="experience-header">
-        <div>
-          <h3>Software Developer Intern</h3>
-          <a href="#">Credflow, Noida</a>
-        </div>
-        <div class="date">📅 Sep 2025 – Present</div>
-      </div>
-      <ul>
-        <li>
-          Built backend APIs handling 1,000+ req/min and ensured high
-          availability under load.
-        </li>
-        <li>
-          Implemented IP-based rate limiting (10 req/min) across modules,
-          reducing spam attempts by ~90%.
-        </li>
-        <li>
-          Standardized API testing flows with Postman + Ngrok to speed up
-          integration and debugging.
-        </li>
-        <li>
-          Implemented Redis caching for session data and frequently accessed
-          responses, improving API latency.
-        </li>
-        <li>
-          Designed and delivered end-to-end feature pages — built Next.js
-          frontend components, corresponding Node.js API routes, MongoDB
-          schemas, and authentication/validation flows.
-        </li>
-      </ul>
-      <br>
-      <div class="experience-tags">
-        <span>Next.js</span>
-        <span>Node.js</span>
-        <span>MongoDB</span>
-        <span>Redis</span>
-        <span>ReactJs</span>
-      </div>
-    </div>
-
-    <!-- Visteon Internship -->
-  <!-- <div class="experience-card">
-      <div class="experience-header">
-        <div>
-          <h3>Software Engineer Intern</h3>
-          <a href="#">Visteon</a>
-        </div>
-        <div class="date">📅 Jan 2025 – Jun 2025</div>
-      </div>
-      <ul class="experience-points">
-        <li>
-          Resolved 10+ critical system defects across infotainment systems for
-          clients such as TATA and Skoda.
-        </li>
-        <li>
-          Maintained over 90% unit test coverage using JUnit4 and Mockito,
-          enhancing code reliability.
-        </li>
-        <li>
-          Documented class interactions using UML diagrams via IBM Rhapsody
-          for clearer architecture visualization.
-        </li>
-        <li>
-          Worked with multithreading and activity lifecycle handling to
-          optimize UI transitions and app performance.
-        </li>
-        <li>
-          Utilized Jetpack Compose and XML layouts to modernize and refactor
-          legacy screens.
-        </li>
-      </ul>
-      <div class="experience-tags">
-        <span>Kotlin</span>
-        <span>Java</span>
-        <span>Jetpack Compose</span>
-        <span>XML</span>
-        <span>JUnit</span>
-        <span>Mockito</span>
-        <span>Dagger</span>
-        <span>HILT</span>
-      </div>
-    </div>
-
-    <!-- Sniphat Internship -->
-  <!-- <div class="experience-card">
-      <div class="experience-header">
-        <div>
-          <h3>Full-Stack Developer Intern</h3>
-          <a href="#">Sniphat</a>
-        </div>
-        <div class="date">📅 Feb 2024 – May 2024</div>
-      </div>
-      <ul class="experience-points">
-        <li>
-          Led development of a cross-platform Flutter app connecting 1,000+ -->
-  <!-- users with career consultants.
-        </li>
-        <li>
-          Built dynamic frontend pages and integrated a custom logic system
-          for question and people search.
-        </li>
-        <li>
-          Implemented features like QR code generator, image cropper, and
-          scanner using Dart libraries.
-        </li>
-        <li>
-          Worked collaboratively with backend in Node.js and Python to ensure
-          seamless functionality.
-        </li>
-      </ul>
-      <div class="experience-tags">
-        <span>Flutter</span>
-        <span>Dart</span>
-        <span>Node.js</span>
-        <span>Python</span>
-        <span>Firebase</span>
-        <span>REST API</span>
-      </div>
-    </div>
-  </section> --> --> -->
-
-  <!-- Education Section -->
-  <section class="education-section" id="education">
-    <h2>Education</h2>
-    <p class="subtitle">My academic background and performance</p>
-
-    <div class="education-card">
-      <div class="edu-left">
-        <h3>Bachelor of Technology (CSE)</h3>
-        <a href="#">Deogiri Institute of Engineering And Management Studies</a>
-        <p>Chh. Sambhajinagar, India</p>
-        <p><strong>CGPA:</strong> 7.3 / 10.0</p>
-      </div>
-      <div class="edu-right">📅 Aug 2023 – June 2027</div>
-    </div>
-  </section>
-
-  <section class="projects-section" id="projects">
-    <h2>Projects</h2>
-    <p class="subtitle">
-      A selection of my work showcasing various technologies and
-      problem-solving approaches
-    </p>
-
-    <div class="projects-grid">
-      <!-- Project: Crypto Tracker -->
-      <div class="project-card">
-        <img src="./assets/cryptoTracker.png" alt="Crypto Tracker App Screenshot" />
-        <div class="project-info">
-          <h3>Crypto Tracker</h3>
-          <p>
-            Developed a cryptocurrency tracking app using GEEKO-API for
-            real-time price monitoring and 24-hour price changes. Built with
-            Kotlin, XML, and ViewModel to ensure smooth and responsive UI.
+  <main>
+    <section class="hero-section">
+      <div class="hero-inner">
+        <img src="./assets/imageResume.jpeg" alt="Purushottam Gawali" class="profile-img" />
+        <div class="hero-content">
+          <span class="eyebrow">Full Stack Developer • MERN Stack • Backend Engineer</span>
+          <h1>Purushottam Gawali</h1>
+          <h2>Building scalable web applications with clean architecture and practical problem-solving.</h2>
+          <p class="intro">
+            I am a Computer Science and Engineering student passionate about full-stack development,
+            secure APIs, database design, and delivering user-focused digital products.
           </p>
-          <div class="tech-tags">
-            <span>Kotlin</span>
-            <span>XML</span>
-            <span>Retrofit</span>
-            <span>ViewModel</span>
+
+          <div class="profile-links" aria-label="Professional profiles">
+            <a href="https://github.com/purushottamgawali05" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/purushottam-gawali" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.hackerrank.com/purushottamgawali" target="_blank" rel="noopener noreferrer">HackerRank</a>
+            <a href="https://leetcode.com/u/purushottamgawali/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+            <a href="https://www.geeksforgeeks.org/user/purushottamgawali/" target="_blank" rel="noopener noreferrer">GeeksforGeeks</a>
+            <a href="https://purushottamgawali05.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">Portfolio</a>
           </div>
-          <a href="https://crypto-tracker-5salsvliz-abhishek-das-projects-439d1dfc.vercel.app/" class="source-link"
-            target="_blank">🌐 Live Demo</a>
+
+          <div class="hero-actions">
+            <a href="mailto:purushottamgawali2004@gmail.com?subject=Hiring%20Opportunity%20for%20Software%20Developer&body=Hello%20Purushottam%2C%0A%0AI%20would%20like%20to%20discuss%20a%20hiring%20opportunity.%0A%0ARegards%2C%20%5BYour%20Name%5D" class="btn primary">📩 Hire Me</a>
+            <a href="#projects" class="btn secondary">🚀 View Projects</a>
+            <a href="Purushottam_Internship_resume_Portfolio.pdf" class="btn tertiary" download>⬇️ Resume</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong>300+</strong>
+              <span>DSA problems solved</span>
+            </div>
+            <div>
+              <strong>4</strong>
+              <span>National hackathons</span>
+            </div>
+            <div>
+              <strong>3</strong>
+              <span>Core MERN projects</span>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Project: AI News App -->
-      <div class="project-card">
-        <img src="./assets/smart_job_tracker.png" alt="Smart Job Application Tracker Screenshot" />
-        <div class="project-info">
-          <h3>Smart Job Application Tracker</h3>
+    <section class="about-section" id="about">
+      <div class="section-header">
+        <p class="kicker">About Me</p>
+        <h2>Developer with a problem-solving mindset</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
           <p>
-            A full-stack job application tracker with JWT-secured auth,
-            application status monitoring, and an AI Resume Reviewer that
-            provides feedback and salary insights.
+            I am a Computer Science and Engineering student at Deogiri Institute of Engineering and Management Studies,
+            focused on building scalable, user-friendly web applications and solving real-world problems through technology.
           </p>
-          <div class="tech-tags">
-            <span>Next.js</span><span>MongoDB</span><span>Redis</span><span>JWT</span>
-          </div>
-          <div class="project-card-demo">
-            <a href="https://github.com/IamRonyDas/Smart-Application-Tracker" class="source-link" target="_blank">💻
-              Source Code</a>
-            <a href="https://smart-application-tracker.vercel.app/" class="source-link" target="_blank">🌐 Live Demo</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="./assets/newsAI.jpg" alt="AI News App Screenshot" />
-        <div class="project-info">
-          <h3>AI News Summarizer</h3>
           <p>
-            An Android app that fetches the latest news using NewsAPI and
-            provides AI-generated summaries via Gemini API. Built with Kotlin,
-            MVVM, Retrofit, and Coroutines. Supports search, WebView reading,
-            and summarization in brief, detailed, and bullet-point formats.
+            My work centers around the MERN stack, RESTful APIs, secure authentication, role-based access control, and efficient database design.
+            I have hands-on experience creating products like AutoPost, Eventora, and an Airline Booking System, where I designed both frontend flows and backend logic.
           </p>
-          <div class="tech-tags">
-            <span>Kotlin</span>
-            <span>MVVM</span>
-            <span>Retrofit</span>
-            <span>Gemini API</span>
-            <span>WebView</span>
+          <p>
+            Beyond development, I enjoy Data Structures and Algorithms, backend engineering, system design, and learning modern tools that improve architecture and user experience.
+          </p>
+        </div>
+        <div class="about-panel">
+          <h3>Core Focus</h3>
+          <ul>
+            <li>Full-stack web development</li>
+            <li>REST API design and backend systems</li>
+            <li>MongoDB, Express.js, React.js, Node.js</li>
+            <li>DSA, OOP, DBMS, OS, Computer Networks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+      <div class="section-header">
+        <p class="kicker">Skills</p>
+        <h2>Technologies I work with</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="./assets/icons/c.png" alt="C" />
+          <span>C</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/Java.png" alt="Java" />
+          <span>Java</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/python.png" alt="Python" />
+          <span>Python</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/Javascript.png" alt="JavaScript" />
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/HTML.png" alt="HTML" />
+          <span>HTML</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/reactjs.png" alt="React.js" />
+          <span>React.js</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/sql.png" alt="SQL" />
+          <span>SQL</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/mongodb.png" alt="MongoDB" />
+          <span>MongoDB</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/linux.png" alt="Linux" />
+          <span>Linux</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/aws.png" alt="AWS" />
+          <span>AWS</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/Bootstrap.png" alt="AWS" />
+          <span>Bootstrap</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/tailwindcss.png" alt="AWS" />
+          <span>Tailwind CSS</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/nodejs.png" alt="AWS" />
+          <span>Node.js</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/Expressjs.png" alt="AWS" />
+          <span>Express.js</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/mySQL.png" alt="AWS" />
+          <span>MySQL</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/github.png" alt="AWS" />
+          <span>GitHub</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/postman.png" alt="AWS" />
+          <span>Postman</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/vscode.png" alt="AWS" />
+          <span>VSCode</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/chromedevtools.png" alt="AWS" />
+          <span>Chrome DevTools</span>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/icons/git.png" alt="AWS" />
+          <span>Git</span>
+        </div>
+      </div>
+
+      <div class="skills-detail-grid">
+        <div class="detail-card">
+          <h3>Programming Languages</h3>
+          <p>C, Java, Python, JavaScript, SQL</p>
+        </div>
+        <div class="detail-card">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, Tailwind CSS, Bootstrap, React.js</p>
+        </div>
+        <div class="detail-card">
+          <h3>Backend</h3>
+          <p>Node.js, Express.js, MongoDB, MySQL</p>
+        </div>
+        <div class="detail-card">
+          <h3>Tools & Fundamentals</h3>
+          <p>Git & GitHub, Postman, VS Code, DSA, OOP, DBMS, OS, CN</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-section" id="experience">
+      <div class="section-header">
+        <p class="kicker">Experience</p>
+        <h2>Project experience and product impact</h2>
+      </div>
+
+      <div class="experience-card">
+        <div class="experience-header">
+          <div>
+            <p class="role-tag">Full Stack Project</p>
+            <h3>AutoPost</h3>
           </div>
-          <a href="https://github.com/IamRonyDas/News-App-Kotlin" class="source-link" target="_blank">💻 Source Code</a>
+          <span class="date">AI-based Social Media Scheduler</span>
+        </div>
+        <ul class="experience-points">
+          <li>Developed a full-stack social media management platform using MongoDB, Express.js, React.js, and Node.js.</li>
+          <li>Integrated AI-assisted content generation to help users create and refine posts based on their requirements.</li>
+          <li>Built RESTful APIs, user authentication, scheduling workflows, and database operations for user and post management.</li>
+        </ul>
+        <div class="experience-tags">
+          <span>MongoDB</span>
+          <span>Express.js</span>
+          <span>React.js</span>
+          <span>Node.js</span>
+          <span>REST API</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Coding Stats Section -->
-  <section id="coding-stats" class="coding-section">
-    <h2>Coding Activity</h2>
-    <p class="subtitle">Problem Solving</p>
-
-    <div class="coding-platforms">
-      <div class="platform leetcode">
-        <h3>LeetCode</h3>
-        <img src="./assets/LeetCode.png" alt="LeetCode Stats" />
-      </div>
-      <div class="platform">
-        <h3>GeeksforGeeks</h3>
-        <img src="./assets/gfg.png" alt="GeeksforGeeks Stats" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact / About Section -->
-  <section class="contact-section" id="contact">
-    <h2>Get In Touch</h2>
-    <p class="subtitle">
-      I'm always open to discussing new opportunities and interesting projects
-    </p>
-    <div class="contact-grid">
-      <div class="contact-card">
-        <div class="icon">📧</div>
-        <div>
-          <h4>Email</h4>
-          <p>purushottamgawali2004@gmail.com</p>
+      <div class="experience-card">
+        <div class="experience-header">
+          <div>
+            <p class="role-tag">Full Stack Project</p>
+            <h3>Eventora</h3>
+          </div>
+          <span class="date">Event Booking Platform</span>
+        </div>
+        <ul class="experience-points">
+          <li>Engineered a responsive event discovery and ticket booking platform using the MERN stack.</li>
+          <li>Implemented secure JWT authentication and Role-Based Access Control to separate admin and attendee workflows.</li>
+          <li>Designed MongoDB schemas and REST APIs for dynamic filtering, ticket availability, and booking confirmations.</li>
+        </ul>
+        <div class="experience-tags">
+          <span>JWT</span>
+          <span>RBAC</span>
+          <span>MERN</span>
+          <span>MongoDB</span>
+          <span>REST API</span>
         </div>
       </div>
-      <div class="contact-card">
-        <div class="icon">📞</div>
-        <div>
-          <h4>Phone</h4>
-          <p>+91 9359861679</p>
-        </div>
-      </div>
-      <div class="contact-card">
-        <div class="icon">📍</div>
-        <div>
-          <h4>Location</h4>
-          <p>Chhatrapati Sambhajinagar, India</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
+      <div class="experience-card">
+        <div class="experience-header">
+          <div>
+            <p class="role-tag">Backend Project</p>
+            <h3>Airline Booking System</h3>
+          </div>
+          <span class="date">Node.js • Express • Database</span>
+        </div>
+        <ul class="experience-points">
+          <li>Built a modular backend application with APIs for user authentication, flight inventory management, and booking workflows.</li>
+          <li>Handled transactional consistency and query optimization for multi-passenger booking requests under concurrency.</li>
+          <li>Tested and validated endpoints through Postman to ensure reliability and correctness.</li>
+        </ul>
+        <div class="experience-tags">
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>Postman</span>
+          <span>Database</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="education-section" id="education">
+      <div class="section-header">
+        <p class="kicker">Education</p>
+        <h2>Academic background</h2>
+      </div>
+
+      <div class="education-card">
+        <div class="edu-left">
+          <h3>B.Tech in Computer Science and Engineering</h3>
+          <a href="#">Deogiri Institute of Engineering and Management Studies</a>
+          <p>Chhatrapati Sambhajinagar, Maharashtra</p>
+          <p><strong>CGPA:</strong> 7.16 till 6th semester</p>
+          <p>Focused on software engineering fundamentals, data structures, algorithms, databases, computer networks, and object-oriented programming.</p>
+        </div>
+        <div class="edu-right">Aug 2023 – Present</div>
+      </div>
+
+      <div class="education-card secondary-edu">
+        <div class="edu-left">
+          <h3>Higher Secondary Certificate (HSC)</h3>
+          <a href="#">Jijamata Junior College</a>
+          <p>Washim, Maharashtra</p>
+          <p><strong>Percentage:</strong> 87%</p>
+          <p>Built a strong foundation in mathematics, science, and analytical thinking that supported my interest in engineering and problem solving.</p>
+        </div>
+        <div class="edu-right">June 2022 – May 2023</div>
+      </div>
+
+      <div class="education-card secondary-edu">
+        <div class="edu-left">
+          <h3>Secondary School Certificate (SSC)</h3>
+          <a href="#">Bal Shivaji Marathi Vidya Niketan</a>
+          <p>Washim, Maharashtra</p>
+          <p><strong>Percentage:</strong> 82.60%</p>
+          <p>Developed disciplined study habits and a strong base in fundamental subjects while exploring early interests in technology and innovation.</p>
+        </div>
+        <div class="edu-right">June 2020 – May 2021</div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="section-header">
+        <p class="kicker">Projects</p>
+        <h2>Selected work</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-visual gradient-one">
+            <span>AutoPost</span>
+          </div>
+          <div class="project-info">
+            <h3>AutoPost - AI-Based Social Media Post Scheduler</h3>
+            <p>
+              Built a full-stack platform for creating, managing, and scheduling social media posts with AI-assisted content refinement.
+            </p>
+            <div class="tech-tags">
+              <span>MongoDB</span>
+              <span>Express.js</span>
+              <span>React.js</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual gradient-two">
+            <span>Eventora</span>
+          </div>
+          <div class="project-info">
+            <h3>Eventora - Event Booking Application</h3>
+            <p>
+              Designed a complete event discovery and ticket booking experience with secure authentication and role-aware access control.
+            </p>
+            <div class="tech-tags">
+              <span>JWT</span>
+              <span>RBAC</span>
+              <span>MERN</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual gradient-three">
+            <span>Airline Booking</span>
+          </div>
+          <div class="project-info">
+            <h3>Airline Booking System</h3>
+            <p>
+              Developed a backend service with modular routes for user auth, flight inventory management, and booking flows under concurrency.
+            </p>
+            <div class="tech-tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>Postman</span>
+              <span>DB</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="achievements-section" id="achievements">
+      <div class="section-header">
+        <p class="kicker">Achievements</p>
+        <h2>Recognition and milestones</h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <h3>Scholarship</h3>
+          <p>HDFC Bank Parivartan Scholar (2023), awarded by HDFC Bank Parivartan Foundation.</p>
+        </div>
+        <div class="achievement-card">
+          <h3>DSA</h3>
+          <p>Solved 300+ problems on LeetCode and GeeksforGeeks and earned a 5-star Java rating on HackerRank.</p>
+        </div>
+        <div class="achievement-card">
+          <h3>Hackathons</h3>
+          <p>Active participant in 4 national hackathons focused on full-stack development and rapid prototyping.</p>
+        </div>
+        <div class="achievement-card">
+          <h3>NSS Volunteer</h3>
+          <p>Contributed to social initiatives such as tree plantation and developed communication and event-planning skills.</p>
+        </div>
+      </div>
+
+      <div class="certifications-wrap">
+        <h3>Certifications</h3>
+        <ul class="certifications-list">
+          <li>Data Structures & Algorithms in Java — Apna College</li>
+          <li>Node.js Backend Development — KnowledgeGate</li>
+          <li>Python Programming Masterclass — Udemy</li>
+          <li>SQL Basics Skill Certification — HackerRank</li>
+          <li>German Language Course — Udemy</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="coding-stats" class="coding-section">
+      <div class="section-header">
+        <p class="kicker">Coding Activity</p>
+        <h2>Problem solving stats</h2>
+      </div>
+
+      <div class="coding-platforms">
+        <div class="platform">
+          <h3>LeetCode</h3>
+          <img src="./assets/LeetCode.png" alt="LeetCode profile stats" />
+        </div>
+        <div class="platform">
+          <h3>GeeksforGeeks</h3>
+          <img src="./assets/gfg.png" alt="GeeksforGeeks profile stats" />
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-header">
+        <p class="kicker">Contact</p>
+        <h2>Let’s connect</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="icon">📧</div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:purushottamgawali2004@gmail.com">purushottamgawali2004@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="icon">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <a href="tel:+919359861679">+91 9359861679</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="icon">📍</div>
+          <div>
+            <h4>Location</h4>
+            <p>Chhatrapati Sambhajinagar, India</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer>
-    <p>© 2026 Purushottam Gawali. Made with ❤️</p>
+    <p>© 2026 Purushottam Gawali. Built with passion for clean, scalable software.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 
