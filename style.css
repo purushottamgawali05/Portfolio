@@ -258,7 +258,7 @@ header {
 
 .eyebrow {
   display: inline-block;
-  color: #96c9ff;
+  color: var(--accent);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-size: 0.72rem;
@@ -273,7 +273,7 @@ header {
 
 .hero-content h2 {
   font-size: clamp(1.25rem, 2vw, 1.9rem);
-  color: #dfeefb;
+  color: var(--text);
   margin-bottom: 18px;
 }
 
@@ -384,7 +384,7 @@ header {
   display: block;
   font-size: 1.7rem;
   margin-bottom: 4px;
-  color: #f8fbff;
+  color: var(--text);
 }
 
 .hero-stats span {
@@ -512,7 +512,7 @@ header {
 
 .skill-card span {
   font-size: 1rem;
-  color: #edf4ff;
+  color: var(--text);
   font-weight: 600;
 }
 
@@ -550,7 +550,7 @@ header {
   font-size: 0.77rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #9ad2ff;
+  color: var(--accent);
   margin-bottom: 8px;
 }
 
@@ -626,7 +626,7 @@ header {
 }
 
 .edu-right {
-  color: #dfeefb;
+  color: var(--text);
   font-weight: 600;
 }
 
@@ -1000,6 +1000,12 @@ body.light-mode .date {
 
 body.light-mode .edu-left a {
   color: #1d4ed8;
+}
+
+body.light-mode .kicker {
+  color: #1d4ed8;
+  background: rgba(37, 99, 235, 0.08);
+  border-color: rgba(37, 99, 235, 0.25);
 }
 
 body.light-mode .certifications-list li {
