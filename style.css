@@ -741,7 +741,7 @@ header {
 
 .coding-platforms {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
   gap: 28px;
 }
 
@@ -806,6 +806,12 @@ header {
 
 .contact-card a {
   overflow-wrap: anywhere;
+}
+
+@media (max-width: 680px) {
+  .coding-platforms {
+    grid-template-columns: 1fr;
+  }
 }
 
 footer {
