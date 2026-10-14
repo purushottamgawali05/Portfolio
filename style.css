@@ -782,6 +782,7 @@ header {
 .contact-card .icon {
   display: grid;
   place-items: center;
+  flex: 0 0 54px;
   width: 54px;
   height: 54px;
   border-radius: 14px;
@@ -797,6 +798,14 @@ header {
 .contact-card a,
 .contact-card p {
   color: var(--muted);
+}
+
+.contact-card > div:last-child {
+  min-width: 0;
+}
+
+.contact-card a {
+  overflow-wrap: anywhere;
 }
 
 footer {
