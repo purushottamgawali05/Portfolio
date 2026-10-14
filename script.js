@@ -12,11 +12,11 @@ const applyTheme = (theme) => {
     themeToggleLabel.textContent = isDark ? 'Light' : 'Dark';
     themeToggle.setAttribute('aria-label', `Switch to ${isDark ? 'light' : 'dark'} mode`);
     themeToggle.setAttribute('aria-pressed', String(isDark));
-    themeToggle.firstElementChild.textContent = isDark ? '☀' : '◐';
+    themeToggle.firstElementChild.textContent = isDark ? '☀️' : '🌙';
   }
 };
 
-let savedTheme = 'light';
+let savedTheme = 'dark';
 try {
   const storedTheme = localStorage.getItem('portfolio-theme');
   if (storedTheme === 'light' || storedTheme === 'dark') {
